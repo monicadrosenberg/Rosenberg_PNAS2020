@@ -1,8 +1,8 @@
 function [r, parametric_p, pos_overlap, neg_overlap, predicted_behav] = leave1out_cpm(fc_mats, behav, p_thresh)
 % Trains and tests a connectome-based predictive model using leave-one-out
-% cross-validation. See Shen et al. (2017) Nature Protocols for more detail.
-% A CPM code repository is updated and maintained at
-% https://github.com/YaleMRRC/CPM.
+% cross-validation. See Finn et al. (2015) Nature Neuroscience & Shen et al. 
+% (2017) Nature Protocols for more detail. A CPM code repository is updated 
+% and maintained at https://github.com/YaleMRRC/CPM.
 % 
 % INPUT
 % fc_mats: Pre-calculated MxMxP matrix containing session-specific
