@@ -30,7 +30,6 @@ function [r, p, pos_overlap, neg_overlap, predicted_behav] = predict_session_per
 %
 % predicted_behav: model predictions
 
-% Set variables
 [r, parametric_p, pos_overlap, neg_overlap, predicted_behav] = leave1out_cpm(fc_mats, behav, p_thresh);
 
 if nrand>0
