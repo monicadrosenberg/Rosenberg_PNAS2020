@@ -1,7 +1,10 @@
 function [r, p, null_r, pos_overlap, neg_overlap, predicted_behav] = predict_taskblock_performance(train_mats, test_mats, behav_train, behav_test, p_thresh, nrand)
 % This function trains and tests a connectome-based predictive model (CPM)
 % with pre-calculated functional connecitivty matrices using leave-one-out 
-% cross-validation. It calculates non-parametric significance when nrand>0.
+% cross-validation. The CPM is trained using data from all but one 
+% participant, and applied to multiple functional connectivity matrices 
+% from the left-out individual to predict multiple measures of behavior. 
+% The function calculates non-parametric significance when nrand>0.
 % 
 % See Finn et al. (2015) Nature Neuroscience & Shen et al. (2017) Nature 
 % Protocols for more detail on CPM. A CPM code repository is updated 
